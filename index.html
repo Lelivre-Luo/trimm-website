@@ -51,7 +51,28 @@
     font-size: 16px;
     text-align: left;
   }
-  </style>
+  /* --- LaTeX booktabs Style for Table --- */
+  .table-container .table {
+    border-collapse: collapse; /* 合并边框 */
+    border: none; /* 移除所有默认边框 */
+  }
+  .table thead {
+    border-top: 2px solid black; /* 模拟 \toprule (顶部粗线) */
+    border-bottom: 1.5px solid black; /* 模拟 \midrule (中间线) */
+  }
+  .table tbody tr:last-child {
+    border-bottom: 2px solid black; /* 模拟 \bottomrule (底部粗线) */
+  }
+  .table th, .table td {
+    border: none; /* 确保没有单元格边框 */
+    padding: 0.8em 0.75em; /* 增加垂直间距，让表格更舒展 */
+    vertical-align: middle; /* 垂直居中 */
+  }
+  /* 自定义一个class来模拟中间的 \midrule */
+  .table .midrule-divider {
+    border-bottom: 1px solid #666; /* ZEGGS 和 BEAT 之间的分隔线 */
+  }
+</style>
 </head>
 <body>
 
@@ -210,7 +231,7 @@
     <h2 class="title is-3 has-text-centered">Objective Evaluation</h2>
 
     <div class="table-container" style="margin-top: 2rem;">
-      <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+      <table class="table is-hoverable is-fullwidth">
         <caption>Evaluation Results shown in one table. The best-performing values from the different models are shown in bold.</caption>
         
         <thead>
@@ -296,7 +317,7 @@
             <td class="has-text-centered">8025.75</td>
             <td class="has-text-centered">0.14</td>
           </tr>
-          <tr>
+          <tr class="midrule-divider">
             <td>TRiMM TSAA</td>
             <td class="has-text-centered">0.07&pm;0.67</td>
             <td class="has-text-centered">0.17&pm;0.79</td>
