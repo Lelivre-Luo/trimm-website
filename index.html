@@ -231,7 +231,7 @@
 
     <div class="columns is-centered" style="margin-top: 1rem;">
       <div class="column is-four-fifths has-text-centered">
-        <p class="is-size-7 has-text-justified" style="margin-top: 0.5rem;">
+        <p class="content has-text-justified" style="margin-top: 0.5rem;">
           In our work, we present a matching system that processes raw speech text through BERT to extract meaning and the corresponding audio through Wav2c to capture tone and rhythm. A multimodal transformer then fuses these features, and our hybrid system generates a final character action that is streamed as a real-time animation into the Unreal Engine.
         </p>
         <img src="./static/images/Arch_Matching.jpg" alt="Our method's pipeline diagram">
@@ -241,7 +241,7 @@
 
     <div class="columns is-centered" style="margin-top: 1rem;">
       <div class="column is-four-fifths has-text-centered">
-        <p class="is-size-7 has-text-justified" style="margin-top: 0.5rem;">
+        <p class="content has-text-justified" style="margin-top: 0.5rem;">
           For our training system, we process three parallel data streams: BERT extracts meaning from raw text, Wav2c extracts tone and rhythm from raw audio, and a dedicated feature extractor processes the raw action sequence for its corresponding joint motion. These three feature sets are then synchronized by a sliding window dataloader to create the structured input batches used to train our final model.
         </p>
         <img src="./static/images/Arch_Training.jpg" alt="Our method's pipeline diagram">
