@@ -125,7 +125,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/pdf/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -142,9 +142,9 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -152,9 +152,9 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -162,16 +162,16 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span>
+              </span> -->
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
@@ -231,8 +231,12 @@
 
     <div class="columns is-centered" style="margin-top: 2rem;">
       <div class="column is-four-fifths has-text-centered">
-        <img src="./static/images/Arch_1.jpg" alt="Our method's pipeline diagram">
-        <p class="is-size-7 mt-1">图注：我们方法的整体流程图。</p>
+        <img src="./static/images/Arch_Matching.jpg" alt="Our method's pipeline diagram">
+        <p class="is-size-7 mt-1">图注：我们方法的整体匹配流程图。</p>
+      </div>
+      <div class="column is-four-fifths has-text-centered">
+        <img src="./static/images/Arch_Training.jpg" alt="Our method's pipeline diagram">
+        <p class="is-size-7 mt-1">图注：我们方法的整体训练流程图。</p>
       </div>
     </div>
 
@@ -263,6 +267,12 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Objective Evaluation</h2>
+
+    <div class="content" style="margin-top: 1.5rem;">
+      <p>
+        The objective metrics also highlight TRiMM’s strong performance, particularly in inference speed and motion diversity, setting a new benchmark.
+      </p>
+    </div>
 
     <div class="table-container" style="margin-top: 2rem;">
       <table class="table is-hoverable is-fullwidth">
@@ -444,7 +454,23 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Subjective Evaluation</h2>
 
-    <h3 class="title is-4" style="margin-top: 2rem;">Data Set</h3>
+    <div class="content has-text-justified">
+      <p>
+        In this study, we designed three user evaluation tasks targeting Human-likeness, appropriateness, and style-appropriateness. According to Nunnally’s seminal work, scale reliability tends to plateau around seven response categories, with marginal gains observed beyond eleven points. So we adopted a 7-point Likert scale to measure participants’ subjective preferences.
+      </p>
+    </div>
+
+    <h3 class="title is-4" style="margin-top: 3rem;">User Study</h3>
+
+    <h4 class="subtitle is-5" style="margin-top: 1rem;">How to Conduct User Study</h4>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <img src="./static/images/UserStudy.png" alt="User study process">
+        <p class="is-size-7 mt-1 has-text-centered">UserStudy</p>
+      </div>
+    </div>
+
+    <h3 class="subtitle is-5" style="margin-top: 1rem;">Result</h3>
 
     <h4 class="subtitle is-5" style="margin-top: 1rem;">Beat</h4>
     <div class="columns is-multiline is-centered has-text-centered">
@@ -533,38 +559,6 @@
         <p class="is-size-7 mt-1 has-text-centered">001_Neutral_0_x_0_9</p>
       </div>
     </div>
-
-
-    <h3 class="title is-4" style="margin-top: 3rem;">User Study</h3>
-
-    <h4 class="subtitle is-5" style="margin-top: 1rem;">How to Conduct User Study</h4>
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <img src="./static/images/UserStudy.png" alt="User study process">
-        <p class="is-size-7 mt-1 has-text-centered">UserStudy</p>
-      </div>
-    </div>
-
-    <h4 class="subtitle is-5" style="margin-top: 1rem;">Result</h4>
-    <div class="columns is-multiline is-centered">
-      <div class="column is-half">
-        <img src="./static/images/Statis_1.png" alt="Result image 1">
-        <p class="is-size-7 mt-1 has-text-centered">Statis_1</p>
-      </div>
-      <div class="column is-half">
-        <img src="./static/images/Statis_2.png" alt="Result image 2">
-        <p class="is-size-7 mt-1 has-text-centered">Statis_2</p>
-      </div>
-      <div class="column is-half">
-        <img src="./static/images/KS_1.png" alt="Result image 3">
-        <p class="is-size-7 mt-1 has-text-centered">KS_1</p>
-      </div>
-      <div class="column is-half">
-        <img src="./static/images/KS_2.png" alt="Result image 4">
-        <p class="is-size-7 mt-1 has-text-centered">KS_2</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
