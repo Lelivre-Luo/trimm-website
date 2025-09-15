@@ -229,17 +229,23 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Our Method</h2>
 
-    <div class="columns is-centered" style="margin-top: 2rem;">
+    <div class="columns is-centered" style="margin-top: 1rem;">
       <div class="column is-four-fifths has-text-centered">
+        <p class="is-size-7 has-text-justified" style="margin-top: 0.5rem;">
+          In our work, we present a matching system that processes raw speech text through BERT to extract meaning and the corresponding audio through Wav2c to capture tone and rhythm. A multimodal transformer then fuses these features, and our hybrid system generates a final character action that is streamed as a real-time animation into the Unreal Engine.
+        </p>
         <img src="./static/images/Arch_Matching.jpg" alt="Our method's pipeline diagram">
-        <p class="is-size-7 mt-1">图注：我们方法的整体匹配流程图。</p>
+        <p class="is-size-7 mt-1">The illustration of how to match motion</p>
       </div>
     </div>
 
     <div class="columns is-centered" style="margin-top: 1rem;">
       <div class="column is-four-fifths has-text-centered">
+        <p class="is-size-7 has-text-justified" style="margin-top: 0.5rem;">
+          For our training system, we process three parallel data streams: BERT extracts meaning from raw text, Wav2c extracts tone and rhythm from raw audio, and a dedicated feature extractor processes the raw action sequence for its corresponding joint motion. These three feature sets are then synchronized by a sliding window dataloader to create the structured input batches used to train our final model.
+        </p>
         <img src="./static/images/Arch_Training.jpg" alt="Our method's pipeline diagram">
-        <p class="is-size-7 mt-1">图注：我们方法的整体训练流程图。</p>
+        <p class="is-size-7 mt-1">The illustration of how to train</p>
       </div>
     </div>
 
@@ -250,7 +256,7 @@
     <h3 class="title is-4" style="margin-top: 2rem;">Data Set</h3>
 
     <h4 class="subtitle is-5" style="margin-top: 1rem;">Beat</h4>
-    <div class="columns is-multiline is-centered has-text-centered is-gapless">
+    <div class="columns is-multiline is-centered has-text-centered">
       <div class="column is-one-fifth">
         <video autoplay loop muted playsinline src="./static/videos/Movie_3_solomon_0_46_46_01.mp4" width="100%"></video>
         <p class="is-size-7 mt-1 has-text-centered">3_solomon_0_46_46_01</p>
@@ -294,7 +300,7 @@
     </div>
 
     <h4 class="subtitle is-5" style="margin-top: 1rem;">ZEGGS</h4>
-    <div class="columns is-multiline is-centered has-text-centered is-gapless">
+    <div class="columns is-multiline is-centered has-text-centered">
       <div class="column is-one-fifth">
         <video autoplay loop muted playsinline src="./static/videos/movie_ZEGGS_001_Neutral_0_x_0_9.mp4" width="100%"></video>
         <p class="is-size-7 mt-1 has-text-centered">001_Neutral_0_x_0_9</p>
